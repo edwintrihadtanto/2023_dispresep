@@ -26,13 +26,28 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
+
+        //DUMMY
+        // 'hostname' => '192.168.1.36',
+        // 'username' => 'postgres',
+        // 'password' => 'ipderssm',
+        // 'database' => 'medismart_backup',
+
+        //REAL
+        // 'hostname' => '192.168.1.74',
+        // 'username' => 'postgres',
+        // 'password' => 'ipderssm',
+        // 'database' => 'medismart',
+
+        //RUMAH
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
-        'DBDriver' => 'MySQLi',
+        'username' => 'postgres',
+        'password' => 'devel09',
+        'database' => '2023_project',
+        
+        'DBDriver' => 'Postgre',
         'DBPrefix' => '',
-        'pConnect' => false,
+        'pConnect' => true,
         'DBDebug'  => true,
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
@@ -41,7 +56,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 5432,
     ];
 
     /**
