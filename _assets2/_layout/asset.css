@@ -1,0 +1,16 @@
+<style type="text/css">
+  .text-center {    
+    justify-items: center;
+  }
+
+  li.nav-item.active {
+    background-color: #e5e5e5;    
+    border-bottom: 2px solid black;
+  }
+
+  .choose tr:hover{
+    outline: 2px solid #000000;
+    background-color: #cbcbcb !important;
+    box-shadow: #a7a7a7 0px 0px 6px 3px;
+  }
+</style>
