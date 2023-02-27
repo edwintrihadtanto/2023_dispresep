@@ -32,7 +32,7 @@
 <div class="wrapper">  
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center navbar-dark">
-    <img class="animation__shake" src="<?= base_url('_assets/dist/img/darmayu.png') ?>" alt="Logo SIM-RS" height="150" width="150">
+    <img class="animation__shake" src="<?= base_url('_assets/dist/img/logoRSSM.png') ?>" alt="Logo SIM-RS">
   </div>
 
   <!-- <nav class="main-header navbar navbar-expand-md navbar-light"> -->  
@@ -69,8 +69,8 @@
 
     <div class="isi_judul_panel"> <!-- tab-content  -->
       <div class="tab-empty" style="flex-direction: column; text-align: center;">
-        <img src="<?= base_url('_assets/dist/img/darmayu.png') ?>" alt="Logo SIM-RS" height="150" width="150">
-        <h4 class="display-4">Tidak ada menu yang ditampilkan!</h4>
+        <img src="<?= base_url('_assets/dist/img/logoRSSM.png') ?>" alt="Logo SIM-RS">
+        <!-- <h4 class="display-4">Tidak ada menu yang ditampilkan!</h4> -->
       </div>
       <div class="tab-loading">
         <div>
