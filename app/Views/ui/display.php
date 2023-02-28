@@ -22,7 +22,7 @@
 <!-- <body class="hold-transition sidebar-mini sidebar-collapse text-sm layout-fixed accent-danger" style="background-color: #d5ecef;"> -->
 <!-- <body class="hold-transition layout-top-nav accent-danger" style="background-color: #d5ecef;"> -->
 <!-- <body class="hold-transition sidebar-collapse layout-top-nav accent-danger" style="background-color: #d5ecef;"> -->
-<body class="hold-transition sidebar-mini sidebar-collapse layout-fixed" data-panel-auto-height-mode="height">
+<body class="layout-top-nav" data-panel-auto-height-mode="height">
 
 <script type="text/javascript">  
   var base_url        = "<?= base_url(); ?>";
@@ -35,54 +35,76 @@
     <img class="animation__shake" src="<?= base_url('_assets/dist/img/logoRSSM.png') ?>" alt="Logo SIM-RS">
   </div>
 
-  <!-- <nav class="main-header navbar navbar-expand-md navbar-light"> -->  
-  <nav class="main-header navbar navbar-expand navbar-light">
-    <!-- <div class="container"> -->
-      <?= $this->include('_layout/nav_bar') ?>
-    <!-- </div>     -->
+  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+    <?= $this->include('_layout/nav_bar') ?>
   </nav>
-  <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-light-success elevation-4">
-    <?= $this->include('_layout/sidebar') ?>     
-  </aside>
+  <div class="content-wrapper" style="padding: 10px; min-height: 833px;">
+       <!-- Main content -->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card card-danger card-outline" style="text-align: center; border-left: 3px solid #dc3545; border-bottom: 3px solid #dc3545; border-right: 3px solid #dc3545;">
+              <div class="card-header" style="background-color: #dc3545; border-bottom: 5px solid rgb(0 0 0); border-top-left-radius: 0; border-top-right-radius: 0;">
+                <h1>OBAT RACIKAN</h1>
+              </div>
+              <div class="card-body" style="height: 250px; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 150px;">
+                <span>R-001</span>
+              </div>
+            </div>
+          </div>
 
-  <!-- Content Wrapper. Contains page content -->
-  <!-- <div class="content-wrapper" style="background-color: #d5ecef;"> -->
-  <div class="content-wrapper iframe-mode" data-widget="iframe" data-loading-screen="750">
-    <div class="nav navbar navbar-expand navbar-white navbar-light border-bottom p-0">
-      <div class="nav-item dropdown" style="border: 1px solid black;">
-        <a class="nav-link bg-danger dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Close</a>
-        <div class="dropdown-menu mt-0">
-          <a class="dropdown-item" href="#" data-widget="iframe-close" data-type="all">Tutup Semua</a>
-          <a class="dropdown-item" href="#" data-widget="iframe-close" data-type="all-other">Tutup Semua Yang Tidak Aktif</a>
+          <div class="col-lg-6">
+            <div class="card card-success card-outline" style="text-align: center; border-left: 3px solid #28a745; border-bottom: 3px solid #28a745; border-right: 3px solid #28a745;">
+              <div class="card-header" style="background-color: #28a745; border-bottom: 5px solid rgb(0 0 0); border-top-left-radius: 0; border-top-right-radius: 0;">
+                <h1>OBAT NON RACIKAN</h1>
+              </div>
+              <div class="card-body" style="height: 250px; display: flex; justify-content: center; flex-direction: column; align-items: center; font-size: 150px;">
+                <span>A-001</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <a class="nav-link bg-light" href="#" data-widget="iframe-scrollleft"><i class="fas fa-angle-double-left"></i></a>
-      <ul class="navbar-nav overflow-hidden nm_judul_panel" role="tablist">        
 
-      </ul>
-      <a class="nav-link bg-light" href="#" data-widget="iframe-scrollright"><i class="fas fa-angle-double-right"></i></a>
-      <a class="nav-link bg-light" href="#" data-widget="iframe-fullscreen"><i class="fas fa-expand"></i></a>
-    </div>
+        <div class="row">
+          <div class="col-lg-6" style="max-height: 29rem; overflow: auto; font-size: 15px;">
+            <table id="table" class="table table-striped table-sm" style="border-collapse: inherit;">
+              <thead>
+                <tr>
+                  <th width="5">#</th>
+                  <th width="150">No Antrian</th>
+                  <th width="150">Medrek</th>
+                  <th>Poliklinik</th>
+                  <th width="50">Act</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
 
-    <div class="isi_judul_panel"> <!-- tab-content  -->
-      <div class="tab-empty" style="flex-direction: column; text-align: center;">
-        <img src="<?= base_url('_assets/dist/img/logoRSSM.png') ?>" alt="Logo SIM-RS">
-        <!-- <h4 class="display-4">Tidak ada menu yang ditampilkan!</h4> -->
-      </div>
-      <div class="tab-loading">
-        <div>
-          <h2 class="display-4">Loading!! <i class="fa fa-sync fa-spin"></i></h2>
+          <div class="col-lg-6" style="max-height: 29rem; overflow: auto; font-size: 15px;">
+            <table id="table" class="table table-striped table-sm" style="border-collapse: inherit;">
+              <thead>
+                <tr>
+                  <th width="5">#</th>
+                  <th width="150">No Antrian</th>
+                  <th width="150">Medrek</th>
+                  <th>Poliklinik</th>
+                  <th width="50">Act</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      
-
-
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
     </div>
+    <!-- /.content -->
   </div>
-  <!-- END KONTEN WRAPPER -->
+
+  <aside class="control-sidebar control-sidebar-dark" style="display: none;"></aside>
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
@@ -91,11 +113,7 @@
     Copyright &copy; <?php echo date('Y') ?> <a href="#">I.T</a>. All rights reserved.
   </footer>
 
-  <!-- Control Sidebar -->
-  
-  <aside class="control-sidebar control-sidebar-dark">    
-  </aside>
-  <!-- /.control-sidebar -->
+ 
 </div>
 
 <!-- jQuery -->
@@ -139,6 +157,22 @@
 			window.location.href = "login";
 		}
 	});
+
+  tampilkan_isi_tindakan();
+  function tampilkan_isi_tindakan() {
+    var Baris = '<tr>';
+    for (var i = 0; i < 15; i++) {
+      var no = i + 1;
+      Baris += '<td>' + no + '</td>';
+      Baris += '<td>R-00' + no + '</td>';
+      Baris += '<td>0-00-00-0' + no + '</td>';
+      Baris += '<td>Jantung ' + no + '</td>';      
+      Baris += '<td><i class="fa fa-edit"></i> <i class="fa fa-save"></i></td>';
+      Baris += "</tr>";
+    }
+    $('#table tbody').append(Baris);
+  }
+
 </script>
 </body>
 </html>

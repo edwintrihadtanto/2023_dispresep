@@ -27,7 +27,7 @@
            with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="display" class="nav-link">
-              <i class="fa fa-pencil nav-icon"></i>
+              <i class="fa fa-eye nav-icon"></i>
               <p>Display Antrian</p>
             </a>
           </li>
